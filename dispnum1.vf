@@ -1,0 +1,177 @@
+//////////////////////////////////////////////////////////////////////////////////
+// 
+// Create Date:    20:54:53 01/05/2017 
+// Design Name:    Runner
+// Module Name:    dispnum1
+// Project Name:   Final Project
+// Target Devices: Kintex7 - xc7k160t-2Lffg676
+// Tool versions:  ISE14.7
+// Description:    
+//                 Developed By Atrix Lin
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+`timescale 1ns / 1ps
+
+module MUX4to1_MUSER_dispnum1(I0, 
+                              I1, 
+                              I2, 
+                              I3, 
+                              s, 
+                              o);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input [1:0] s;
+   output o;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_11;
+   wire XLXN_13;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   
+   AND2  XLXI_2 (.I0(XLXN_13), 
+                .I1(XLXN_11), 
+                .O(XLXN_19));
+   AND2  XLXI_3 (.I0(I0), 
+                .I1(XLXN_19), 
+                .O(XLXN_1));
+   AND2  XLXI_4 (.I0(I1), 
+                .I1(XLXN_20), 
+                .O(XLXN_2));
+   AND2  XLXI_5 (.I0(I2), 
+                .I1(XLXN_21), 
+                .O(XLXN_3));
+   AND2  XLXI_6 (.I0(I3), 
+                .I1(XLXN_22), 
+                .O(XLXN_4));
+   OR4  XLXI_7 (.I0(XLXN_4), 
+               .I1(XLXN_3), 
+               .I2(XLXN_2), 
+               .I3(XLXN_1), 
+               .O(o));
+   INV  XLXI_8 (.I(s[1]), 
+               .O(XLXN_11));
+   INV  XLXI_9 (.I(s[0]), 
+               .O(XLXN_13));
+   AND2  XLXI_10 (.I0(s[0]), 
+                 .I1(XLXN_11), 
+                 .O(XLXN_20));
+   AND2  XLXI_11 (.I0(s[1]), 
+                 .I1(XLXN_13), 
+                 .O(XLXN_21));
+   AND2  XLXI_12 (.I0(s[1]), 
+                 .I1(s[0]), 
+                 .O(XLXN_22));
+endmodule
+`timescale 1ns / 1ps
+
+module displaysync_MUSER_dispnum1(Hexs, 
+                                  LES, 
+                                  point, 
+                                  Scan, 
+                                  AN, 
+                                  HEX, 
+                                  LE, 
+                                  p);
+
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] AN;
+   output [3:0] HEX;
+   output LE;
+   output p;
+   
+   wire V0;
+   wire V1;
+   
+   Mux4to1b4  XLXI_1 (.I0(Hexs[7:4]), 
+                     .I1(Hexs[3:0]), 
+                     .I2(Hexs[11:8]), 
+                     .I3(Hexs[15:12]), 
+                     .s(Scan[1:0]), 
+                     .o(HEX[3:0]));
+   Mux4to1b4  XLXI_2 (.I0({V1, V1, V1, V0}), 
+                     .I1({V1, V1, V0, V1}), 
+                     .I2({V1, V0, V1, V1}), 
+                     .I3({V0, V1, V1, V1}), 
+                     .s(Scan[1:0]), 
+                     .o(AN[3:0]));
+   MUX4to1_MUSER_dispnum1  XLXI_3 (.I0(point[0]), 
+                                  .I1(point[1]), 
+                                  .I2(point[2]), 
+                                  .I3(point[3]), 
+                                  .s(Scan[1:0]), 
+                                  .o(p));
+   MUX4to1_MUSER_dispnum1  XLXI_4 (.I0(LES[0]), 
+                                  .I1(LES[1]), 
+                                  .I2(LES[2]), 
+                                  .I3(LES[3]), 
+                                  .s(Scan[1:0]), 
+                                  .o(LE));
+   VCC  XLXI_5 (.P(V1));
+   GND  XLXI_6 (.G(V0));
+endmodule
+`timescale 1ns / 1ps
+
+module dispnum1(clk, 
+                HEXS, 
+                LES, 
+                points, 
+                RST, 
+                AN, 
+                Segment);
+
+    input clk;
+    input [15:0] HEXS;
+    input [3:0] LES;
+    input [3:0] points;
+    input RST;
+   output [3:0] AN;
+   output [7:0] Segment;
+   
+   wire [31:0] clkdiv;
+   wire [3:0] HEX;
+   wire XLXN_13;
+   wire XLXN_14;
+   
+   clkdiv  XLXI_1 (.clk(clk), 
+                  .rst(RST), 
+                  .clkdiv(clkdiv[31:0]));
+   MyMC14495  XLXI_2 (.D0(HEX[0]), 
+                     .D1(HEX[1]), 
+                     .D2(HEX[2]), 
+                     .D3(HEX[3]), 
+                     .LE(XLXN_13), 
+                     .point(XLXN_14), 
+                     .a(Segment[0]), 
+                     .b(Segment[1]), 
+                     .c(Segment[2]), 
+                     .d(Segment[3]), 
+                     .e(Segment[4]), 
+                     .f(Segment[5]), 
+                     .g(Segment[6]), 
+                     .p(Segment[7]));
+   displaysync_MUSER_dispnum1  XLXI_3 (.Hexs(HEXS[15:0]), 
+                                      .LES(LES[3:0]), 
+                                      .point(points[3:0]), 
+                                      .Scan(clkdiv[18:17]), 
+                                      .AN(AN[3:0]), 
+                                      .HEX(HEX[3:0]), 
+                                      .LE(XLXN_13), 
+                                      .p(XLXN_14));
+endmodule

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Atrix\Desktop\Final\Final\TOP.ncd
+OUTFILE=C:\Users\Atrix\Desktop\Final\Final\TOP.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=C:\Users\Atrix\Desktop\Final\Final
+LICENSE=WebPack
+USER_INFO=__0_0_0

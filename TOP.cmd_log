@@ -1,0 +1,147 @@
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -timing -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+xst -intstyle ise -ifn "C:/Users/Atrix/Desktop/Final/Final/TOP.xst" -ofn "C:/Users/Atrix/Desktop/Final/Final/TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc kintexucf.ucf -p xc7k160t-ffg676-2L TOP.ngc TOP.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt 2 -ir off -pr off -lc off -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -power off -o TOP_map.ncd TOP.ngd TOP.pcf 
+par -w -intstyle ise -ol high -smartguide "C:/Users/Atrix/Desktop/Final/Final/TOP_guide.ncd" -mt 4 TOP_map.ncd TOP.ncd TOP.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml TOP.twx TOP.ncd -o TOP.twr TOP.pcf -ucf kintexucf.ucf 
+bitgen -intstyle ise -f TOP.ut TOP.ncd 
